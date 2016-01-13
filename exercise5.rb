@@ -1,6 +1,8 @@
-def to_fahrenheit(temp)
-  temp.to_i * 9 / 5 + 32
+def to_celsius(temp)
+  (temp - 32) * 5 / 9
 end
 
 
-puts "30 degrees Celsius is #{to_fahrenheit(30)} degrees Fahrenheit."
+print "What temperature would you like to convert to Celsius: "
+temp = gets.chomp.to_i
+puts "#{temp} degrees Fahrenheit converts to #{to_celsius(temp)} degrees Celsius."
